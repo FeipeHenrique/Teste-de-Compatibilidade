@@ -1,4 +1,6 @@
-<hr>
-<p>Trabalho de PHP - 2026</p>
+    </main>
+    <footer>
+        <p>Feito por Felipe H.</p>
+    </footer>
 </body>
 </html>

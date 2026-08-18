@@ -1,15 +1,11 @@
-
 <?php
 
 function limparNome($nome)
 {
-    // Remove acentos
     $nome = iconv('UTF-8', 'ASCII//TRANSLIT', $nome);
 
-    // Remove espaços
     $nome = str_replace(' ', '', $nome);
 
-    // Converte para maiúsculas
     $nome = strtoupper($nome);
 
     return $nome;
@@ -42,4 +38,4 @@ function calcularCompatibilidade($nome1, $nome2)
     }
 
     return $compatibilidade;
-}
+} 

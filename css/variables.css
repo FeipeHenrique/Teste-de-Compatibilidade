@@ -1,0 +1,16 @@
+:root {
+    --cor-primaria: #FF4F81;
+    --cor-primaria-escura: #e63d6d;
+    --cor-fundo: #FFEEF5;
+    --cor-texto: #222;
+    --cor-branco: #ffffff;
+    --cor-input-borda: #ffb6c9;
+    --cor-caixa: #ffffff;
+
+    --fonte: "Arial", "Helvetica Neue", sans-serif;
+
+    --raio: 12px;
+    --raio-pill: 25px;
+    --sombra: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --sombra-leve: 0 2px 8px rgba(255, 79, 129, 0.2);
+}

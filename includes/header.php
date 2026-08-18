@@ -1,8 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-<title>Teste de Compatibilidade</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Compatibilidade</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>Teste de Compatibilidade</h1>
-<hr>
+    <header>
+        <h1>
+            <span class="heart-icon">♥</span>
+            TESTE DE COMPATIBILIDADE
+            <span class="heart-icon">♥</span>
+        </h1>
+    </header>
+    <main>

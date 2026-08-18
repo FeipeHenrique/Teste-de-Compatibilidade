@@ -1,0 +1,109 @@
+/* ===== MOBILE (padrão - até 767px) ===== */
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* ===== TABLET / iPad (768px+) ===== */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 1.35rem;
+    }
+
+    .coracao-svg {
+        width: 140px;
+    }
+
+    .coracao-resultado .coracao-svg {
+        width: 200px;
+    }
+
+    .porcentagem {
+        font-size: 2.8rem;
+    }
+
+    .form-box {
+        max-width: 360px;
+        gap: 1.1rem;
+    }
+
+    .input-group input[type="text"] {
+        padding: 0.85rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    .btn-combinar {
+        padding: 0.75rem 2.2rem;
+        font-size: 1rem;
+    }
+
+    .info-box {
+        max-width: 340px;
+        font-size: 0.95rem;
+        padding: 1rem 1.3rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
+        padding: 0.7rem;
+    }
+}
+
+/* ===== DESKTOP (1024px+) ===== */
+@media (min-width: 1024px) {
+    header {
+        padding: 1rem 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .coracao-svg {
+        width: 160px;
+    }
+
+    .coracao-resultado .coracao-svg {
+        width: 230px;
+    }
+
+    .porcentagem {
+        font-size: 3.2rem;
+    }
+
+    .form-box {
+        max-width: 400px;
+        gap: 1.2rem;
+    }
+
+    .input-group input[type="text"] {
+        padding: 0.9rem 1.3rem;
+        font-size: 1.05rem;
+    }
+
+    .btn-combinar {
+        padding: 0.8rem 2.5rem;
+        font-size: 1.05rem;
+    }
+
+    .info-box {
+        max-width: 380px;
+        font-size: 1rem;
+        padding: 1.1rem 1.5rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+}
+
+/* ===== Telas muito grandes ===== */
+@media (min-width: 1400px) {
+    .form-box {
+        max-width: 420px;
+    }
+}

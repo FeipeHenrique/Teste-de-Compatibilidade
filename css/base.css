@@ -1,0 +1,190 @@
+@import url("variables.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--fonte);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    padding: 0.9rem 1rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+header h1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+header .heart-icon {
+    font-size: 1rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ===== CORAÇÃO SVG ===== */
+.coracao-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto 1.5rem;
+}
+
+.coracao-svg {
+    width: 110px;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 4px 8px rgba(255, 79, 129, 0.35));
+}
+
+/* Tela de resultado: coração + porcentagem */
+.coracao-resultado {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem auto 1.5rem;
+}
+
+.coracao-resultado .coracao-svg {
+    width: 160px;
+}
+
+.porcentagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    color: var(--cor-branco);
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* ===== FORMULÁRIO ===== */
+.form-box {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    padding: 0 1rem;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input[type="text"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid var(--cor-input-borda);
+    border-radius: var(--raio-pill);
+    background: var(--cor-branco);
+    font-size: 0.95rem;
+    color: var(--cor-texto);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-group input[type="text"]::placeholder {
+    color: #999;
+}
+
+.input-group input[type="text"]:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: var(--sombra-leve);
+}
+
+.btn-combinar {
+    display: block;
+    width: fit-content;
+    margin: 0.4rem auto 0;
+    padding: 0.65rem 1.8rem;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: var(--raio-pill);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.15s;
+    box-shadow: var(--sombra-leve);
+}
+
+.btn-combinar:hover {
+    background-color: var(--cor-primaria-escura);
+    transform: translateY(-1px);
+}
+
+.btn-combinar:active {
+    transform: translateY(0);
+}
+
+/* ===== CAIXA DE TEXTO INFORMATIVA ===== */
+.info-box {
+    background: var(--cor-branco);
+    border-radius: var(--raio);
+    padding: 0.9rem 1.1rem;
+    margin: 1.8rem auto 1.5rem;
+    max-width: 280px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #555;
+    box-shadow: var(--sombra-leve);
+}
+
+.info-box strong {
+    color: var(--cor-primaria);
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem 0 1.5rem;
+    width: 100%;
+}
