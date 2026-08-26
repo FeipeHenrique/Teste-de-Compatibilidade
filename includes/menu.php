@@ -1,4 +1,4 @@
-<nav>
-<a href="index.php">Início</a>
-</nav>
+<a href="Index.php">
+    <button type="submit" class="btn-combinar">Início</button>
+</a>
 <hr>

@@ -27,5 +27,6 @@ $porcentagem = calcularCompatibilidade($nome1, $nome2);
 </div>
 
 <?php
+include "includes/menu.php";
 include "includes/footer.php";
 ?>
